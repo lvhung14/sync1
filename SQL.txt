@@ -1,0 +1,24 @@
+Phân tich và thiết kế CSDL
+	B1: Mô hình quan niệm:
+		+ Xác định các đối tượng cần lưu trữ
+		+ Xác định thuọc tính của đối tượng
+			==> Các đối tượng chưa liên kết với nhau
+	B2: Mô hình logic (cơ sở các đối tượng [ERD], cơ sở mẫu tin):
+		+ Xác định mối quan hệ của các đối tượng
+			. Mối quan hệ: 1-1 1-n n-1 n-n --> a-b
+			. a,b số phần tử (đối tượng) của thực thể tối thiểu, tối đa tham gia vào mqh
+		+ Xác định khoá của mỗi đối tượng 
+		+ Xác định KDL của thuộc tính trong mỗi đối tượng
+	*** Diagram, bảng thiết kế ***
+	B3: Xây dựng mô hình vật lý - CSDL
+		+ Xác định tên CSDL --> dùng lệnh tạo ra CSDL
+		+ Tạo ra các bảng (table) thuộc CSDL
+			. Tạo cột (column) thuộc bảng
+			. Tạo khoá
+		+ Tạo mối quan hệ --> liên kết ràng buộc giữa các bảng
+			. Xử lí mqh để lưu trữ dữ liệu chính xác hơn
+			
+			B2: Đối tượng (thực thể)	--> B3: Table
+			B2: Thuộc tính (KDL)		--> B3: Column (KDL, ràng buộc)
+				Khoá(Chọn)				--> B3: Mối quan hệ 1-1 1-n n-1 n-n
+										--> Xử lí sao cho lưu trữ dữ liệu chính xác

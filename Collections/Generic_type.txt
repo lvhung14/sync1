@@ -1,0 +1,10 @@
+Generic Type:
+	- Nhận giá là kiểu dữ liệu đối tượng
+	
+			private static <Element> void g_printf(String prefix, Element[] elements){
+				System.out.println(prefix + " --> ");
+				for(Element element : elements){
+					System.out.println(element);
+				}
+				System.out.println();
+			}
